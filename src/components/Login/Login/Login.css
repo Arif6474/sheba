@@ -1,0 +1,15 @@
+.login-form{
+    width:500px;
+    box-shadow: 0 0 15px rgba(0,0,0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+}
+.account{
+    margin-top: 15px;
+    color: rgb(94, 89, 89);
+    font-size: 15px;
+}
+.login-title{
+   color: mediumseagreen;
+    margin: 20px auto;
+}

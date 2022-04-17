@@ -1,0 +1,21 @@
+.register-btn{
+    width: 100%;
+    background-color:#e41b3d;
+    border-radius: 20px;
+    border:none;
+    color:white;
+    padding: 5px 0;
+}
+.register-btn:hover{
+    background-color:#dc0227;
+}
+.login input{
+    border-radius: 10px;
+    font-size: 12px;
+}
+.login label{
+    font-size: 13px;
+    font-weight:500;
+    color:#312e2e;
+    opacity: 0.7;
+}

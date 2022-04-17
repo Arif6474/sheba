@@ -29,7 +29,7 @@
 
 .service-btn {
     width: 100%;
-    background-color:rgb(37, 130, 37);
+    background-color:rgb(197, 21, 45);
     padding: 10px;
     border-radius: 5px;
     border:none;
@@ -38,7 +38,8 @@
     cursor: pointer;
     font-size: 15px;
     font-weight: bold;
+    margin-bottom: 0;
 }
 .service-btn:hover{
-    background-color:rgb(8, 26, 8);
+    background-color:rgb(110, 4, 16);
 }
