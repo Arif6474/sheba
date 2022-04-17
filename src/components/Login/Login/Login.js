@@ -33,6 +33,7 @@ const Login = () => {
           Open an account
         </span>
       </p>
+      <p className="account">Are you forget password? <span  className="text-info">Reset password</span> </p>
     </Form>
     );
 };
