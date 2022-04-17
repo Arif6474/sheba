@@ -11,6 +11,7 @@ import Home from './components/Home/Home';
 import Login from './components/Login/Login/Login';
 import Signup from './components/Login/Signup/Signup';
 import NotFound from './components/NotFound/NotFound';
+import RequireAuth from './components/RequireAuth/RequireAuth';
 
 import ServiceDetail from './components/ServiceDetail/ServiceDetail';
 
@@ -30,7 +31,11 @@ function App() {
       <Route path="/blog" element={<Blog></Blog>}></Route>
       <Route path="/about" element={<About></About>}></Route>
       <Route path="/banner" element={<Banner></Banner>}></Route>
-      <Route path="/checkout" element={<Checkout></Checkout>}></Route>
+      <Route path="/checkout" element={
+        <RequireAuth>
+          <Checkout></Checkout>
+        </RequireAuth>
+      }></Route>
     
    
      <Route path="*" element={<NotFound></NotFound>}></Route>

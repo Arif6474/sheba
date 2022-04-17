@@ -9,3 +9,10 @@
     background-color: rgb(240, 255, 193);
     
 }
+.logout-btn{
+    border-radius: 10px;
+    border: none;
+    background-color:rgb(130, 214, 177);
+    font-weight: bold;
+    padding: 5px;
+}
