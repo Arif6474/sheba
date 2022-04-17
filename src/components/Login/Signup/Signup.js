@@ -5,6 +5,7 @@ import './Signup.css'
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import SocialLogin from '../../SocialLogin/SocialLogin';
+import Loading from '../../Loading/Loading';
 
 const Signup = () => {
      
@@ -23,6 +24,16 @@ const Signup = () => {
     if (user){
         navigate('/')
     }
+    let errorMessage;
+    if (error) {
+        
+        errorMessage = <p className="text-center text-danger">Error: {error.message}
+        </p>   
+        
+      }
+    if(loading){
+      return <Loading></Loading>
+  }
     const handleRegister = (event) => {
         event.preventDefault();
        const name =event.target.name.value;
@@ -30,6 +41,7 @@ const Signup = () => {
        const password = event.target.password.value;
        createUserWithEmailAndPassword(email, password);
     }
+
     return (
         <div className="login-form mx-auto mt-4">
             <h2 className="login-title text-center">Sheba</h2>
@@ -48,7 +60,7 @@ const Signup = () => {
           
           <Form.Control type="password"  name="password" placeholder="Password" required />
         </Form.Group>
-        
+        {errorMessage}
   
         <button className="register-btn" >
           Register

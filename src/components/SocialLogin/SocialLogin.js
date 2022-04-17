@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import google from '../../images/google.png'
 import github from '../../images/github.png'
+import Loading from '../Loading/Loading';
 const SocialLogin = () => {
     const navigate = useNavigate();
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
@@ -14,6 +15,9 @@ const SocialLogin = () => {
             <p className="text-danger text-center">Error: {error?.message} {error2?.message}</p>
           </div>
       }
+      if(loading || loading2){
+        return <Loading></Loading>
+    }
     if(user || user2) {
         navigate('/')
     }

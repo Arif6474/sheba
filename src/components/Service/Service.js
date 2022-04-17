@@ -12,7 +12,7 @@ const Service = ({service}) => {
         <div className="service-container">
         <img src={img}  alt="" />
         <div className="service">
-        <h2 className="service-title">{name}</h2>
+        <h2 className="service-title mt-2">{name}</h2>
         <p className="service-price">${price}</p>
         <p className="service-description">{des.slice(0,150)}...</p>
        

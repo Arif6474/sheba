@@ -9,6 +9,7 @@ import './Login.css'
 import { ToastContainer, toast } from 'react-toastify';
 
 import 'react-toastify/dist/ReactToastify.css';
+import Loading from '../../Loading/Loading';
 
 const Login = () => {
     const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
@@ -20,7 +21,7 @@ const Login = () => {
         loading,
         error,
       ] = useSignInWithEmailAndPassword(auth);
-
+     
     const emailRef= useRef('');
     const passwordRef = useRef('');
     const navigate = useNavigate();
@@ -29,10 +30,12 @@ const Login = () => {
     if (error) {
         
         errorMessage = <p className="text-center text-danger">Error: {error.message}
-        </p>
-          
+        </p>   
         
       }
+      if(loading){
+        return <Loading></Loading>
+    }
    if(user){
     navigate(from, { replace: true });
    }
