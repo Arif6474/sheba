@@ -1,15 +1,29 @@
-# Getting Started with Create React App
+# Sheba
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
 In the project directory, you can run:
 
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open [https://sheba-725ac.web.app/services](https://sheba-725ac.web.app/services) to view it in your browser.
+
+## Features and Functionalities
+- React route
+- React spinner
+- authentication(email/password,google, github)
+- React toast
+- Email verification
+- Password reset
+- Error message
+- Navbar, banner, footer etc.
+
+## List of technologies
+- React router
+- Firebase
+- React bootstrap
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
