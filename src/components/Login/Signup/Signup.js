@@ -4,9 +4,10 @@ import { useNavigate } from 'react-router-dom';
 import './Signup.css'
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
+import SocialLogin from '../../SocialLogin/SocialLogin';
 
 const Signup = () => {
-    
+     
     const [
         createUserWithEmailAndPassword,
         user,
@@ -57,6 +58,7 @@ const Signup = () => {
           Already have an account?
          
         </p>
+        <SocialLogin></SocialLogin>
         </div>
     );
 };
