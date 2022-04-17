@@ -1,0 +1,11 @@
+.navbar-container{
+    background-color: rgb(216, 239, 228);
+    color: black;
+    font-weight: 700;
+}
+
+.login{
+    border-radius:10px;
+    background-color: rgb(240, 255, 193);
+    
+}
