@@ -10,7 +10,7 @@ const Services = () => {
             <h2 className="title"> Our Services</h2>
         <div className="services-container">
             {
-                servicing.map(service=> <Service key={service.name} service={service}></Service>)
+                servicing.map(service=> <Service key={service.id} service={service}></Service>)
             }
         </div>
         </div>

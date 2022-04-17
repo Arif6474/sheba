@@ -11,7 +11,8 @@ import Home from './components/Home/Home';
 import Login from './components/Login/Login/Login';
 import Signup from './components/Login/Signup/Signup';
 import NotFound from './components/NotFound/NotFound';
-import Service from './components/Service/Service';
+
+import ServiceDetail from './components/ServiceDetail/ServiceDetail';
 
 import Services from './components/Services/Services';
 
@@ -23,7 +24,7 @@ function App() {
       
       <Route path="/" element={<Home></Home>}></Route>
       <Route path="/services" element={<Services></Services>}></Route>
-      <Route path="/service" element={<Service></Service>}></Route>
+      <Route path="/service/:serviceId" element={<ServiceDetail></ServiceDetail>}></Route>
       <Route path="/login" element={<Login></Login>}></Route>
       <Route path="/signup" element={<Signup></Signup>}></Route>
       <Route path="/blog" element={<Blog></Blog>}></Route>
