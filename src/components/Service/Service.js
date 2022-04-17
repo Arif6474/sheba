@@ -14,7 +14,7 @@ const Service = ({service}) => {
         <div className="service">
         <h2 className="service-title">{name}</h2>
         <p className="service-price">${price}</p>
-        <p className="service-description">{des}</p>
+        <p className="service-description">{des.slice(0,150)}...</p>
        
         </div>
         <button onClick={() => navigateToServiceDetail (id)}  className="service-btn">{name}</button>

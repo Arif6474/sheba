@@ -2,19 +2,37 @@ import React from 'react';
 import { Form } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import './Signup.css'
-
+import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import auth from '../../../firebase.init';
 
 const Signup = () => {
-    const navigate = useNavigate();
-
-    const handleSignup = () => {
-        navigate('/login')
+    
+    const [
+        createUserWithEmailAndPassword,
+        user,
+        loading,
+        error,
+      ] = useCreateUserWithEmailAndPassword(auth);
+      
+      const navigate= useNavigate();
+    const navigateLogin = () => {
+        navigate('/login');
+    }
+    if (user){
+        navigate('/')
+    }
+    const handleRegister = (event) => {
+        event.preventDefault();
+       const name =event.target.name.value;
+       const email = event.target.email.value;
+       const password = event.target.password.value;
+       createUserWithEmailAndPassword(email, password);
     }
     return (
-        <Form  className="login-form mx-auto mt-4">
-            <div className="text-center text-success">
-            <h2>Sheba</h2>
-        </div>
+        <div className="login-form mx-auto mt-4">
+            <h2 className="login-title text-center">Sheba</h2>
+            <Form  onSubmit={handleRegister}>
+           
         <Form.Group className="mb-3" controlId="formBasicEmail">
         
           <Form.Control type="text" name="name" placeholder="Your name" />
@@ -28,21 +46,19 @@ const Signup = () => {
           
           <Form.Control type="password"  name="password" placeholder="Password" />
         </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicPassword">
-      
-          <Form.Control type="password"  name="confirm-password" placeholder="Confirm password" />
-        </Form.Group>
+        
   
         <button className="register-btn" >
           Register
         </button>
-        <p onClick={handleSignup} className="text-center  mt-4 text-info" >
+       
+      </Form>
+      <p className="text-center  mt-4 text-info" onClick={navigateLogin}>
           Already have an account?
          
         </p>
-      </Form>
+        </div>
     );
-    
 };
 
 export default Signup;

@@ -1,23 +1,24 @@
 [
     {          
               "id" : "101",
-              "name":"Khandani Dim Pose ",
-              "img" : "https://i.ibb.co/tCQwT6p/breakfast1.png",
-              "price" : "70",
-              "des" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quae, consequuntur odio eius cum facilis." 
+              "name":"AC servicing ",
+              "img" : "https://i.ibb.co/3dzkwby/ac-service-ccexpress.jpg",
+              "price" : "170",
+              "des" : "AC Master Service offers detail cleaning of the indoor and outdoor units including minor problem-fixing (excluding materials and parts). The service charge varies on your AC amount, height, weight and difficulties.This service offers old Compressor removal and new Compressor installation. Compressor price and warranty differ as per manufacturer." 
     },
     {        
               "id" : "102",
-              "name":"Bread Slad Organic ",
-              "img" : "https://i.ibb.co/0XnJ0Df/breakfast2.png",
+              "name":"TV repair service ",
+              "img" : "https://i.ibb.co/mGRTLgD/tv-service-ccexpress.jpg",
               "price" : "80",
-              "des" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quae, consequuntur odio eius cum facilis." 
+              "des" : "Service charge is fixed but the price will differ if any additional or replacing materials/parts installed. Customer will be solely responsible for their personal material and the safety of household resources." 
     },
     {         
               "id" : "103",
-              "name":"Desi Dim Pose ",
-              "img" : "https://i.ibb.co/fnHQrJ2/breakfast5.png",
-              "price" : "70",
-              "des" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quae, consequuntur odio eius cum facilis." 
+              "name":"Refrigerator Repair Service",
+              "img" : "https://i.ibb.co/bWsZn5w/refrigerator-ccexpress.jpg",
+              "price" : "150",
+              "des" : "Refrigerator repairing service is one of my services to repair all types of fridge or freezer related problems.Customer will be solely responsible for their personal material and the safety of household resources." 
     }
 ]
+

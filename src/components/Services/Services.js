@@ -6,8 +6,8 @@ import './Services.css'
 const Services = () => {
     const [servicing] = useServicing()
     return (
-        <div>
-            <h2 className="title"> Our Services</h2>
+        <div >
+            <h2  className="title"> My Services</h2>
         <div className="services-container">
             {
                 servicing.map(service=> <Service key={service.id} service={service}></Service>)
