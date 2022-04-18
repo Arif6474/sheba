@@ -2,6 +2,7 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import About from './components/About/About';
+import Accordions from './components/Accordions/Accordions';
 import Banner from './components/Banner/Banner';
 import Blog from './components/Blog/Blog';
 import Checkout from './components/Checkout/Checkout';
@@ -37,7 +38,7 @@ function App() {
         </RequireAuth>
       }></Route>
     
-   
+     <Route path="/accordions" element={<Accordions></Accordions>}></Route>
      <Route path="*" element={<NotFound></NotFound>}></Route>
     </Routes>
     <Footer></Footer>
